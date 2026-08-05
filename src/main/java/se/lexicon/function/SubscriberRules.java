@@ -11,6 +11,9 @@ public final class SubscriberRules {
             subscriber.getMonthsRemaining() == 0
                     || subscriber.getMonthsRemaining() == 1;
 
+    public static final SubscriberFilter EXPIRED = subscriber ->
+            subscriber.getMonthsRemaining() == 0;
+
     public static final SubscriberFilter ACTIVE_AND_EXPIRING = ACTIVE.and(EXPIRING);
 
     public static final SubscriberFilter PAYING = subscriber ->

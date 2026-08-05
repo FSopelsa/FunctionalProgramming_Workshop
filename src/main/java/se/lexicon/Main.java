@@ -34,10 +34,10 @@ public class Main {
                         SubscriberRules.extendBy(3)
                 ));
 
-        print("Deactivated FREE and expiring",
+        print("Deactivated expired FREE",
                 processor.applyToMatching(
                         subscribers,
-                        SubscriberRules.byPlan(Plan.FREE).and(SubscriberRules.EXPIRING),
+                        SubscriberRules.byPlan(Plan.FREE).and(SubscriberRules.EXPIRED),
                         SubscriberRules.DEACTIVATE
                 ));
     }
