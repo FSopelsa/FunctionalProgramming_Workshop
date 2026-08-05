@@ -1,16 +1,15 @@
 # Functional Programming Workshop
 
-Subscription-list exercise built from the UML and requirements in
-[`Functional_Programming_Workshop.md`](Functional_Programming_Workshop.md).
-
 ## Implemented scope
 
-- Part 1: subscriber model, plans, in-memory DAO, functional filters, actions,
+- ✔️ Part 1: subscriber model, plans, in-memory DAO, functional filters, actions,
   rule composition, filtering, subscription extension, and deactivation.
-- Part 2: JUnit tests for all six requested scenarios.
-- Extra coverage: DAO behavior, invalid rule arguments, and action boundaries.
 
-## Project structure
+ Planned implementations:
+- ⬜ Part 2: JUnit tests for all six requested scenarios.
+- ⬜ Extra coverage: DAO behavior, invalid rule arguments, and action boundaries.
+
+## Planned Project structure
 
 ```text
 src/
@@ -42,7 +41,7 @@ src/
 - `function/SubscriberProcessor.java`: reusable list-processing algorithm.
 - `Main.java`: sample data and execution of every required rule/action.
 
-### Part 2 files
+### Planned Part 2 files
 
 - `SubscriberProcessorTest.java`: all six workshop scenarios.
 - `SubscriberRulesTest.java`: action and argument edge cases.
@@ -102,5 +101,3 @@ mvn.cmd package
 java -cp target/classes se.lexicon.Main
 ```
 
-`mvn.cmd clean test` currently runs 12 tests: six workshop scenarios, three rule
-tests, and three DAO tests.
